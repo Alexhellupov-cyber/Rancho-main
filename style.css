@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    /* Убираем фоновое изображение из body */
+    /* background-color: aquamarine; Можно оставить цвет фона для остальной части */
+}
+
+header {
+    background-image: url("img/headerimg.jpg"); /* Фоновое изображение только для header */
+    background-size: cover; /* Картинка полностью покрывает фон */
+    background-position: center; /* Центрируем картинку */
+    background-repeat: no-repeat; /* Отключаем повторение */
+    padding: 20px 0; /* Отступы для header, чтобы картинка не прилипала к краям */
+    border-radius: 20px;
+    
+}
+
+.header-menu {
+    display: flex;
+    align-items: center; /* Выравнивание по центру */
+    justify-content: space-between; /* Логотип слева, меню в центре, кнопка справа */
+    padding: 5px 40px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+}
+
+nav {
+    flex: 1;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ff7f50;
+    transition: transform 0.3s ease-in-out;
+}
+
+nav a:hover {
+    transform: scale(1.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    transition: transform 0.5s ease-in-out;
+}
+
+nav ul li:hover {
+    transform: scale(1.1);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ff7f50;
+    display: inline-block;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+.order-btn {
+    margin-left: auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    background-color: #ff7f50;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline;
+    transition: transform 0.5s ease-in-out;
+}
+
+.order-btn:hover {
+    transform: scale(1.1);
+}
+
+.header-title {
+    padding: 50px 1000px 40px 100px;
+}
+
+.header-text {
+    padding: 20px;
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
+}
